@@ -27,7 +27,7 @@ label powershellOverview:
             jump mainMenu
 
 label getuserinfoCmd:
-    scene powershellbg
+    scene psgetlocaluser
     show narrator sensai at left 
     n sensai "Understanding the users on your system is vital to know who may be accessing the sytem and what rights that individual may possess"
     n sensai "The cmdlet get-localuser is a simple tool to return all of the local users running on your Windows system"
@@ -35,15 +35,20 @@ label getuserinfoCmd:
     jump powershellOverview
 
 label geteventlog:
-    scene powershellbg
+    scene psgeteventcode
     show narrator sensai at left 
     n sensai "Host logs are the lifeblood to any true hunting activity for bad on your system.  The host logs hold a wealth of knowledge to know what is happening on your system."
     n sensai "The ability to quickly review your logs is important to being able to detect malicious activity from false positives."
     n sensai "The cmdlet get-eventlog is a simple tool to return all of the logs on your Windows system"
+
+    scene psgeteventcodeoutputgridview
+    n sensai "Another tool that will make searching for your logs a lot easier is the | output-gridview command"
+    n sensai "This tool gives a gui sorting and filtering interface to searching your logs"
+    n sensai "To bring up this option just put a | output-gridview after your get-eventcode cmdlet like what I have done in the black box pointed to by the green arrow"
     jump powershellOverview
 
 label getpackage:
-    scene powershellbg
+    scene psgetpackage
     show narrator sensai at left 
     n sensai "Understanding the software running on a system is important to know what vulnerabiliteis may exist on a system"
     n sensai "You can also use it to detect if your selected security tools are installed on the system"
@@ -51,14 +56,14 @@ label getpackage:
     jump powershellOverview
 
 label getprocessCmd:
-    scene powershellbg
+    scene psgetprocess
     show narrator sensai at left 
     n sensai "Understanding what is running on your systems is a valuable tool to being able to detect what should and what should not be running on your system"
     n sensai "The cmdlet get-process is a simple tool to return all of the processes running on your Windows system"
     jump powershellOverview
 
 label getserviceCmd:
-    scene powershellbg
+    scene psgetservice
     show narrator sensai at left 
     n sensai "Understanding what is running on your systems is a valuable tool to being able to detect what should and what should not be running on your system"
     n sensai "The cmdlet get-service is a simple tool to return all of the services running on your Windows system"
@@ -73,3 +78,5 @@ label powershellDescription:
     n sensai "This is not going to cover everything you need to know about Powershell but we’re going to dip into some cool features that you can use to enhance your security knowledge of your system"
 
     jump powershellOverview
+
+
