@@ -1,15 +1,124 @@
 label inventory_info:
 
-    n sensai "Welcome to the world of Splunk"
-    n sensai "You may be wondering what Splunk is, or you may already have a knowledge of the tool and would better like to learn how to use the tool"
-    n sensai "I will provide you an overview of the technology,"
-    n sensai "minimum information to set it up in a home lab, "    
-    n sensai "instructions on how to set up a more complicated network"
-    n sensai "instructions on how to do day to day searches"
+    scene darkcyberbg
+
+    menu:
+        "What would you like to see within the Inventory Menu?"
+
+        "Review the Inventory for the Scenario Data":
+            n sensai "A wise choice to know your own network before proceeding"
+            jump networkInventoryList
+
+        "Learn about common systems in an inventory and what are common attacks against these devices":
+            n sensai "I drink the coffee, and it's good to the last drop."
+            jump networkToolsTutorials
+
+        "Return to Main Menu":
+            jump mainMenu
+            
     
-    scene networkinventory
+    #call screen network_inventory
+
+label networkInventoryList:
+    scene networkinventorybg
     call screen network_inventory
+
+label networkToolsTutorials:
+    scene commonsystemsbg
+    call screen common_system
 
 screen network_inventory:
     modal True
+    imagemap:
+        ground "networkinventory.png"
+        # SQL Server
+        hotspot (708, 962, 550, 99) action Jump("inventory_info")
 
+
+screen common_system:
+    modal True   
+    imagemap:
+        ground "commonsystems.png"
+        # SQL Server
+        hotspot (125, 77, 211, 227) action Jump("sqlServerOverview")
+        # Domain Controllers
+        hotspot (508, 76, 221, 223) action Jump("domainControllersOverview")
+        # Firewall
+        hotspot (846, 85, 217, 215) action Jump("firewallReview")
+        # Web Server
+        hotspot (1237, 85, 207, 214) action Jump("webServerOverview")
+        # SCCM
+        hotspot (1527, 90, 316, 194) action Jump("sccmOverview")
+        # Exchange Server
+        hotspot (87, 457, 271, 241) action Jump("exchangeOverview")
+        # BYOD
+        hotspot (427, 460, 312, 233) action Jump("byodOverview")
+        # Samba
+        hotspot (836, 460, 230, 238) action Jump("sambaOverview")
+        #  Server
+        hotspot (1183, 475, 310, 218) action Jump("serverOverview")
+        # Workstation
+        hotspot (1563, 460, 243, 252) action Jump("workstationOverview")
+        # Return to Title
+        hotspot (236, 908, 548, 96) action Jump("inventoryTitle")
+        # Return to Main Menu
+        hotspot (1074, 904, 554, 106) action Jump("mainMenu")
+
+label sqlServerOverview:
+    scene darkcyberbg
+    n sensai "We shall teach you the power of SQL"
+    jump inventory_info
+
+label domainControllersOverview:
+    scene darkcyberbg
+    n sensai "We shall teach you the power of Domain Controller"
+    jump inventory_info
+
+label firewallReview:
+    scene darkcyberbg
+    n sensai "We shall teach you the power of Firewall"
+    jump inventory_info
+
+label webServerOverview:
+    scene darkcyberbg
+    n sensai "Welcome to Web Server"
+    n sensai "This product does a lot of things"
+    jump inventory_info
+
+label sccmOverview:
+    scene darkcyberbg
+    n sensai "So you want to learn about SCCM"
+    n sensai "This is generic information"
+    jump inventory_info 
+
+label exchangeOverview:
+    scene darkcyberbg
+    n sensai "Exchange Server, you want to set up?"
+    jump inventory_info
+
+label byodOverview:
+    scene darkcyberbg
+    n sensai "BYOD you want to set up?"
+    jump inventory_info
+
+label sambaOverview:
+    scene darkcyberbg
+    n sensai "We shall teach you the power of Samba"
+    jump inventory_info
+
+label serverOverview:
+    scene darkcyberbg
+    n sensai "Welcome to Server"
+    n sensai "This product does a lot of things"
+    jump inventory_info
+
+label workstationOverview:
+    scene darkcyberbg
+    n sensai "So you want to learn about workstation"
+    n sensai "This is generic information"
+    jump inventory_info 
+
+label inventoryTitle:
+    scene darkcyberbg
+    n sensai "We'll go back to Inventory Title"
+    jump inventory_info

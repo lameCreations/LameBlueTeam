@@ -29,6 +29,17 @@ label start:
     n sensai "The goal of this training is to make it available to anyone regardless of whether or not you have the infrastructure."
     n sensai "I plan to give you the tools to be able to do this at your own environment, but if you can't install the software, we will simulate it here in this training"
     
+    jump mainMenu
+
+    n sensai "Well this concludes the sharing portion of this meeting" 
+
+    # This ends the game.
+
+    return
+
+
+label mainMenu:
+    scene darkcyberbg
     menu:
         "What would you like to do?"
 
@@ -37,13 +48,13 @@ label start:
             jump inventory_info
 
         "Learn scripting tools such as PowerShell.":
-            n sensai "I drink the coffee, and it's good to the last drop."
+            jump powershellOverview
 
         "Learn about network logs":
-            n sensai "Network logs are quite useful"
+            jump networklogOverview
 
         "Learn about host Logs":
-            n sensai "Host logs are awesome tools"
+            jump hostlogOverview
     
         "Learn about Cyber Tools.":
             n sensai "Cyber Tools abound"
@@ -51,13 +62,3 @@ label start:
 
         "Try some of the scenarios for detection":
             n sensai "Bold move if you haven't had any training"       
-
-    
-
-
-
-    n sensai "Well this concludes the sharing portion of this meeting" 
-
-    # This ends the game.
-
-    return
