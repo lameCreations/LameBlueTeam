@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/images/location/splunk.rpy", line 11, in script
+    call screen splunkOverview
+ScriptError: could not find label 'sysmon'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\main.py", line 145, in run
+    renpy.execution.run_context(True)
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
+    context.run()
+  File "game/images/location/splunk.rpy", line 11, in script
+    call screen splunkOverview
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'sysmon'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
+Blue Team Training With L.A.M.E. Creations 1.0
+Wed Mar 13 20:11:14 2024
