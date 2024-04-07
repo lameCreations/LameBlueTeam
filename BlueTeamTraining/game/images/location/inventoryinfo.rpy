@@ -40,25 +40,25 @@ screen common_system:
     imagemap:
         ground "commonsystems.png"
         # SQL Server
-        hotspot (125, 77, 211, 227) action Jump("sqlServerOverview")
+        hotspot (125, 77, 211, 227) action Jump("sqldatabase_overview")
         # Domain Controllers
-        hotspot (508, 76, 221, 223) action Jump("domainControllersOverview")
+        hotspot (508, 76, 221, 223) action Jump("domaincontroller_overview")
         # Firewall
-        hotspot (846, 85, 217, 215) action Jump("firewallReview")
+        hotspot (846, 85, 217, 215) action Jump("firewall_overview")
         # Web Server
-        hotspot (1237, 85, 207, 214) action Jump("webServerOverview")
+        hotspot (1237, 85, 207, 214) action Jump("webserver_overview")
         # SCCM
-        hotspot (1527, 90, 316, 194) action Jump("sccmOverview")
+        hotspot (1527, 90, 316, 194) action Jump("sccm_overview")
         # Exchange Server
-        hotspot (87, 457, 271, 241) action Jump("exchangeOverview")
+        hotspot (87, 457, 271, 241) action Jump("exchange_overview")
         # BYOD
-        hotspot (427, 460, 312, 233) action Jump("byodOverview")
+        hotspot (427, 460, 312, 233) action Jump("byod_overview")
         # Samba
-        hotspot (836, 460, 230, 238) action Jump("sambaOverview")
+        hotspot (836, 460, 230, 238) action Jump("samba_overview")
         #  Server
-        hotspot (1183, 475, 310, 218) action Jump("serverOverview")
+        hotspot (1183, 475, 310, 218) action Jump("server_overview")
         # Workstation
-        hotspot (1563, 460, 243, 252) action Jump("workstationOverview")
+        hotspot (1563, 460, 243, 252) action Jump("workstation_overview")
         # Return to Title
         hotspot (236, 908, 548, 96) action Jump("inventoryTitle")
         # Return to Main Menu

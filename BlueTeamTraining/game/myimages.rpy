@@ -23,4 +23,18 @@ image soalerts = "soalerts.png"
 image sodashboards = "sodashboards.png"
 image sohunt = "sohunt.png"
 
+image gravwelldashboards = "gravwelldashboard.png"
+image gravwellkits = "gravwellkits.png"
+image gravwelloverview = "gravwelloverview.png"
+image gravwellsearch = "gravwellsearch.png"
+
+image pfsense_main = "pfsense_main.png"
+image pfsense_main1 = "pfsense_main1.png"
+image pfsense_main2 = "pfsense_main2.png"
+image pfsense_main3 = "pfsense_main3.png"
+image pfsense_main4 = "pfsense_main4.png"
+image pfsense_main5 = "pfsense_main5.png"
+image pfsense_main6 = "pfsense_main6.png"
+image pfsense_main7 = "pfsense_main7.png"
+
 image narrator sensai = "sensai.png"

@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/locations/inventoryinfo.rpy", line 3: Line with id inventory_info_4cfe7bbb appears twice. The other line is game/images/location/inventoryinfo.rpy:3
+File "game/images/location/splunk.rpy", line 112: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Watch youtube playlists on how to search with SPL"
+                                                       ^
 
-File "game/scripts/locations/inventoryinfo.rpy", line 4: Line with id inventory_info_06a3597f appears twice. The other line is game/images/location/inventoryinfo.rpy:4
-
-File "game/scripts/locations/inventoryinfo.rpy", line 5: Line with id inventory_info_b7816dda appears twice. The other line is game/images/location/inventoryinfo.rpy:5
-
-File "game/scripts/locations/inventoryinfo.rpy", line 6: Line with id inventory_info_0167f670 appears twice. The other line is game/images/location/inventoryinfo.rpy:6
-
-File "game/scripts/locations/inventoryinfo.rpy", line 7: Line with id inventory_info_51b18184 appears twice. The other line is game/images/location/inventoryinfo.rpy:7
-
-File "game/scripts/locations/inventoryinfo.rpy", line 8: Line with id inventory_info_75819d69 appears twice. The other line is game/images/location/inventoryinfo.rpy:8
-
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Mar 13 20:04:49 2024
+Ren'Py Version: Ren'Py 8.1.3.23091805
+Sat Apr  6 15:08:45 2024
