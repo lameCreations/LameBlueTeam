@@ -38,4 +38,4 @@ label securityonion:
     show narrator sensai at left 
     n sensai "You can select text with your mouse and then use the context menu to send that selected text to CyberChef, Google, or other destinations defined in the actions list."
 
-    jump mainMenu
+    jump security_tools

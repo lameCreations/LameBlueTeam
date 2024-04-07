@@ -37,4 +37,14 @@ image pfsense_main5 = "pfsense_main5.png"
 image pfsense_main6 = "pfsense_main6.png"
 image pfsense_main7 = "pfsense_main7.png"
 
+image bruteforcepassword = "bruteforcepasswords.png"
+image bruteforcepassword1 = "bruteforcepasswords1.png"
+image sqlpasswordlogs = "sqlbruteforcelogs.png"
+image sqlinjection_example1 = "sql_example1.png"
+image sqlinjection_example2 = "sql_example2.png"
+image sqlinjection_example3 = "sql_example3.png"
+image sqlinjection_example4 = "sql_example4.png"
+
+
+
 image narrator sensai = "sensai.png"

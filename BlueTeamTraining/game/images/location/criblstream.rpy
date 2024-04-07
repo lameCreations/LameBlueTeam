@@ -1,5 +1,5 @@
 label criblstream:
-    scene gravwelloverview
+    scene darkcyberbg
     show narrator sensai at left 
     menu:
         "Cribl offers multiple products:"
@@ -15,7 +15,7 @@ label criblstream:
             jump mainMenu
 
 label criblstream_overview:
-    scene gravwelloverview
+    scene darkcyberbg
     show narrator sensai at left 
     n sensai "Cribl LogStream is a highly scalable and flexible data processing platform designed to help organizations manage and optimize their log data infrastructure efficiently. "
     n sensai "It enables organizations to collect, route, transform, and analyze large volumes of log and machine data from various sources across their IT environment. Cribl LogStream provides valuable capabilities to improve cybersecurity by enhancing visibility, threat detection, and incident response capabilities."
@@ -39,7 +39,7 @@ label criblstream_overview:
     jump criblstream
 
 label cribledge_overview:
-    scene gravwelloverview
+    scene darkcyberbg
     show narrator sensai at left 
     n sensai "Cribl Edge is an innovative data pipeline solution designed to help organizations manage and optimize their log data collection and forwarding processes efficiently, particularly in distributed and edge computing environments. It enables organizations to collect, filter, and forward log data from remote locations, edge devices, and cloud environments to centralized data platforms for analysis and monitoring. Cribl Edge provides valuable capabilities to improve cybersecurity by enhancing visibility, threat detection, and incident response capabilities at the edge of the network."
     n sensai "Key Features:"
@@ -64,7 +64,7 @@ label cribledge_overview:
 
 
 label criblsearch_overview:
-    scene gravwelloverview
+    scene darkcyberbg
     show narrator sensai at left 
     n sensai "Cribl Search is an advanced search and investigation tool designed to help organizations analyze and investigate log and machine data efficiently, enabling cybersecurity teams to detect and respond to security threats effectively. "
     n sensai "It provides powerful search capabilities, visualizations, and analysis tools to help organizations gain insights into their data, identify security incidents, and streamline incident investigation and response workflows."

@@ -4,13 +4,39 @@ label sqldatabase_overview:
 
     n sensai "Attackers use various methods to target database servers, each with its own set of tactics and techniques. "
     n sensai "There are ten common methods attackers use to attack database servers, along with detection methods"
+    scene sql_example1
+    show narrator sensai at left
     n sensai "SQL Injection (SQLi):Attack Method:"
     n sensai "Attackers inject malicious SQL code into input fields or query parameters to manipulate the database or access sensitive information"
+    n sensai "In this case, the attacker adds `' OR '1'='1` to the password field, causing the SQL query to always return true, effectively bypassing authentication."
+   
+    scene sql_example2
+    show narrator sensai at left
+    n sensai "Union-Based SQL Injection: Union-based SQL injection involves exploiting the `UNION` SQL operator to retrieve data from other database tables."
+    n sensai "This query retrieves the username and password from the Users table and appends it to the result set of the original query."
+
+    scene sql_example3
+    show narrator sensai at left
+    n sensai "Error-Based SQL Injection: Error-based SQL injection involves exploiting error messages returned by the database server to extract information about the database structure or data."
+    n sensai "This query forces an error if the version function is not numeric, revealing information about the database server."
+
+    scene sql_example4
+    show narrator sensai at left
+    n sensai "Blind SQL Injection: Blind SQL injection occurs when the application does not display database errors, making it difficult for attackers to extract data directly. Attackers typically use boolean-based or time-based techniques to infer information indirectly."
+    n sensai " In this case, if the application responds differently (e.g., login success or delay) based on whether the condition is true or false, attackers can infer information about the database."
+
     n sensai "Detection: Implement input validation and parameterized queries to prevent SQL injection attacks."
     n sensai "Monitor database logs for suspicious queries and anomalous behavior."
+    
+    scene bruteforcepassword
+    show narrator sensai at left
     n sensai "Brute Force Attacks:"
     n sensai "Attack Method: Attackers attempt to guess database credentials (username/password) through automated login attempts."
+    scene bruteforcepassword1
+    show narrator sensai at left
     n sensai "Detection: Implement strong password policies and use multi-factor authentication."
+    scene sqlpasswordlogs
+    show narrator sensai at left
     n sensai "Monitor login attempts and set up alerts for multiple failed login attempts within a short period."
      
     n sensai "Credential Theft:Attack Method: Attackers use techniques such as phishing, keylogging, or malware to steal database credentials from users or administrators."

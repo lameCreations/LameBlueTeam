@@ -21,7 +21,8 @@ screen splunkOverview:
         hotspot (76, 624, 553, 309) action Jump("splunkEnterpriseSecurity")
         hotspot (791, 609, 356, 328) action Jump("splunkMLTK")
         hotspot (1310, 621, 534, 307) action Jump("splunkSoar")
- 
+        hotspot (181, 504, 360, 72) action Jump("mainMenu")
+        hotspot (1399, 513, 362, 77) action Jump("security_tools")
 
 label splunkSoar:
     scene darkcyberbg
